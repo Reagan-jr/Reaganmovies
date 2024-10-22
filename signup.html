@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login | MovieStream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">MovieStream</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="#">Upcoming</a></li>
+                <li><a href="signup.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+        <div class="search-profile">
+            <input type="text" placeholder="Search for movies, actors, genres...">
+            <div class="profile-icon">
+                <img src="profile-icon.png" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <!-- Signup/Login Section -->
+    <section class="signup-section">
+        <div class="form-container">
+            <h2>Create Account</h2>
+            <form action="#">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+
+                <button type="submit">Sign Up</button>
+
+                <p>Already have an account? <a href="#" id="login-link">Login here</a></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="login-form" style="display:none;">
+            <h2>Login</h2>
+            <form action="#">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" placeholder="Enter your email">
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+
+                <p>Don't have an account? <a href="#" id="signup-link">Sign up here</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>
